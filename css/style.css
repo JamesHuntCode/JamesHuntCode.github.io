@@ -2,6 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     border: 0px;
+
     overflow-x: hidden;
 }
 
@@ -25,6 +26,39 @@ body {
     color: white;
 
     cursor: pointer;
+}
+
+#mobile-nav {
+    text-align: center;
+    background-color: #333;
+}
+
+#mobile-nav .container-fluid p {
+    margin: 5px;
+    padding: 5px;
+}
+
+#mobile-nav a {
+    font-family: "Montserrat", arial;
+    font-size: 15px;
+
+    text-decoration: none;
+    color: white;
+
+    cursor: pointer;
+}
+
+#navigate-site {
+    font-family: "Montserrat", arial;
+    font-size: 15px;
+
+    text-decoration: none;
+    color: white;
+
+    cursor: pointer;
+
+    margin: 0px;
+    padding: 10px;
 }
 
 /* END OF NAVIGATION BAR */

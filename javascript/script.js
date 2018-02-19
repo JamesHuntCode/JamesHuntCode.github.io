@@ -45,11 +45,13 @@ $(document).ready(function() {
 
         if ($(window).width() <= 760) {
             $('#nav-bar').hide();
+            $('#mobile-nav').show();
 
             $('#summary').hide();
             $('#spacer').hide();
         } else {
             $('#nav-bar').show();
+            $('#mobile-nav').hide();
 
             $('#summary').show();
             $('#spacer').show();
@@ -117,6 +119,11 @@ $(document).ready(function() {
     }
 
     // NAVIGATION BAR
+    $('#mobile-nav .container-fluid').hide();
+
+    $('#navigate-site').on('click', function() {
+        $('#mobile-nav .container-fluid').slideToggle();
+    });
 
     $('#nav-bar a').hover(function() {
         $(this).animate({color: '#008080'}, 200);
@@ -124,7 +131,7 @@ $(document).ready(function() {
         $(this).animate({color: '#ffffff'}, 200);
     });
 
-    $('#nav-bar a').on('click', function() {
+    $('#nav-bar a, #mobile-nav a').on('click', function() {
         switch ($(this).text().toUpperCase()) {
             case "ABOUT JAMES":
                 sendUserTo("about-james");
