@@ -678,3 +678,8 @@ $(document).ready(function() {
 
     // END OF FOOTER
 });
+
+// Loading iframe after all other page data
+$(window).on('load', function() {
+    $('#blog-frame').attr('src', 'https://jameshuntcode.wordpress.com');
+});
