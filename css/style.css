@@ -4,39 +4,50 @@ body {
     border: 0px;
 
     overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
+@media only screen and (min-width : 320px) {
     .main-heading {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .sub-heading {
         font-size: 15px;
+    }
+
+    .footer-heading {
+        font-size: 20px;
     }
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+@media only screen and (min-width : 480px) {
     .main-heading {
-        font-size: 20px;
+        font-size: 35px;
     }
 
     .sub-heading {
         font-size: 15px;
+    }
+
+    .footer-heading {
+        font-size: 20px;
     }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (min-width : 768px) {
     .main-heading {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .sub-heading {
         font-size: 15px;
+    }
+
+    .footer-heading {
+        font-size: 27px;
     }
 }
 
@@ -49,6 +60,10 @@ body {
     .sub-heading {
         font-size: 25px;
     }
+
+    .footer-heading {
+        font-size: 27px;
+    }
 }
 
 /* Large Devices, Wide Screens */
@@ -59,6 +74,10 @@ body {
 
     .sub-heading {
         font-size: 25px;
+    }
+
+    .footer-heading {
+        font-size: 27px;
     }
 }
 
@@ -400,7 +419,7 @@ body {
 
 #divider {
     height: 2px;
-    width: 0%;
+    width: 75%;
 
     background-color: #E0E0E0;
 
@@ -1005,13 +1024,11 @@ body {
 
 #footer {
     background-color: #333;
-
     padding: 20px 0px;
 }
 
 .footer-heading {
     font-family: "Montserrat", arial;
-    font-size: 27px;
 
     text-align: center;
     color: teal;

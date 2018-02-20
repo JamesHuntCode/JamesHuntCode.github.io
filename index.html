@@ -365,7 +365,7 @@
             <h1 id="social-media-heading" class="main-heading">James' Social Media</h1>
             <h3 id="social-media-sub-heading" class="sub-heading">Live Updates From James' Social Media</h3>
             <div class="container-fluid">
-                <div class="col-sm-8">
+                <div class="col-md-8">
                     <div class="social-media-content-wrapper">
                         <div class="social-media-content">
                             <iframe id="blog-frame" src="" width="100%" height="100%" target="_top" frameborder="0">
@@ -375,7 +375,7 @@
                     </div>
                 </div>
                 <!-- JAMES' TWITTER -->
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <div class="social-media-content-wrapping">
                         <div id="twitter-content" class="social-media-content">
                             <!-- EMBEDDED TWITTER FEED -->
@@ -450,29 +450,38 @@
                 <form action="https://formspree.io/jameshuntwork1997@yahoo.com" method="POST">
                     <div class="container-fluid">
                         <div class="row">
-                            <h3 class="sub-heading">Enter Your Full Name<span>*</span></h3>
-                            <input type="text" name="name" placeholder="Your name" required="required"/>
+                            <div class="col-md-12">
+                                <h3 class="sub-heading">Enter Your Full Name<span>*</span></h3>
+                                <input type="text" name="name" placeholder="Your name" required="required"/>
+                            </div>
                         </div>
                         <div class="row">
-                            <h3 class="sub-heading">Enter Your Email Address<span>*</span></h3>
-                            <input type="email" name="_replyto" placeholder="Your Email Address" required="required"/>
+                            <div class="col-md-12">
+                                <h3 class="sub-heading">Enter Your Email Address<span>*</span></h3>
+                                <input type="email" name="_replyto" placeholder="Your Email Address" required="required"/>
+                            </div>
                         </div>
                         <div class="row">
-                            <h3 class="sub-heading">Enter The Subject Of Your Email</h3>
-                            <input name="_subject" placeholder="Email subject"/>
+                            <div class="col-md-12">
+                                <h3 class="sub-heading">Enter The Subject Of Your Email</h3>
+                                <input name="_subject" placeholder="Email subject"/>
+                            </div>
                         </div>
                         <div class="row">
-                            <h3 class="sub-heading">Enter Your Message<span>*</span></h3>
-                            <textarea name="message" required="required"></textarea>
+                            <div class="col-md-12">
+                                <h3 class="sub-heading">Enter Your Message<span>*</span></h3>
+                                <textarea name="message" required="required"></textarea>
+                            </div>
                         </div>
                         <div class="row">
-                            <input type="text" name="_gotcha" style="display:none"/>
+                            <div class="col-md-12">
+                                <input id="submit-button" type="submit" value="Send Email"/>
+                            </div>
                         </div>
                         <div class="row">
-                            <input id="submit-button" type="submit" value="Send Email">
-                        </div>
-                        <div class="row">
-                            <p><i>Required fields; your name, your email address, your message.</i></p>
+                            <div class="col-md-12">
+                                <p><i>Required fields; your name, your email address, your message.</i></p>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -483,7 +492,7 @@
         <div id="footer">
             <div class="container-fluid">
                 <!-- Page info -->
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <h3 class="footer-heading">On This Page</h3>
                     <p class="redirect-user">Return To Top</p>
                     <p class="redirect-user">About James</p>
@@ -491,7 +500,7 @@
                     <p class="redirect-user">James' Social Media</p>
                     <p class="redirect-user">Contact James</p>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <h3 class="footer-heading">Want To Work With James?</h3>
                     <p id="work-with-james">
                         Are you looking for a new website or software upgrade for yourself or your business?
@@ -501,13 +510,13 @@
                 </div>
             </div>
             <div class="container-fluid">
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <h3 class="footer-heading">Useful Links</h3>
                     <p class="footer-link"><a target="_blank" href="https://www.linkedin.com/in/james-hunt-a63762106/">James' LinkedIn Profile</a></p>
                     <p class="footer-link"><a target="_blank" href="https://twitter.com/JamesHuntCode?lang=en">Follow James on Twitter</a></p>
                     <p class="footer-link"><a target="_blank" href="https://github.com/JamesHuntCode">Follow James on GitHub</a></p>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <h3 class="footer-heading">Email James Here</h3>
                     <p id="work-with-james">
                         jameshuntwork1997@yahoo.com
@@ -516,13 +525,13 @@
             </div>
             <div class="container-fluid">
                 <!-- GitHub link -->
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <p class="under-footer-text">
                         source code for this website can be found on James' GitHub
                     </p>
                 </div>
                 <!-- Copyright -->
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <p id="copyright-notice" class="under-footer-text">
                         © 2018 James Hunt Some Rights Reserved
                     </p>
