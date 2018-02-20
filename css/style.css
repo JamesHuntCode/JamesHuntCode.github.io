@@ -6,11 +6,72 @@ body {
     overflow-x: hidden;
 }
 
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    .main-heading {
+        font-size: 20px;
+    }
+
+    .sub-heading {
+        font-size: 15px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .main-heading {
+        font-size: 20px;
+    }
+
+    .sub-heading {
+        font-size: 15px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .main-heading {
+        font-size: 30px;
+    }
+
+    .sub-heading {
+        font-size: 15px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .main-heading {
+        font-size: 50px;
+    }
+
+    .sub-heading {
+        font-size: 25px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .main-heading {
+        font-size: 50px;
+    }
+
+    .sub-heading {
+        font-size: 25px;
+    }
+}
+
 /* NAVIGATION BAR */
 
 #nav-bar {
     text-align: center;
     background-color: #333;
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+    z-index: 9999;
 }
 
 #nav-bar p {
@@ -28,9 +89,20 @@ body {
     cursor: pointer;
 }
 
+#nav-bar-spacer {
+    height: 50px;
+    width: 100%;
+}
+
 #mobile-nav {
     text-align: center;
     background-color: #333;
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+    z-index: 9999;
 }
 
 #mobile-nav .container-fluid p {
@@ -221,7 +293,7 @@ body {
 
     cursor: pointer;
 
-    z-index: 9999;
+    z-index: 9998;
 }
 
 .active {
@@ -247,7 +319,7 @@ body {
 
 .main-heading {
     font-family: "Quicksand", arial;
-    font-size: 50px;
+    /*font-size: 50px;*/
     text-align: center;
 
     margin: 10px;
@@ -256,7 +328,7 @@ body {
 
 .sub-heading {
     font-family: "Quicksand", arial;
-    font-size: 25px;
+    /*font-size: 25px;*/
     text-align: center;
 
     margin: 10px;
@@ -301,6 +373,15 @@ body {
     background-color: #E0E0E0;
 
     margin: 30px auto;
+}
+
+.fact-header {
+    font-family: "Quicksand", arial;
+    font-size: 25px;
+    text-align: center;
+
+    margin: 10px;
+    padding: 5px;
 }
 
 .fact-logo-wrapper {
