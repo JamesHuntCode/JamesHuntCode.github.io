@@ -124,10 +124,17 @@ $(document).ready(function() {
         }
 
         // NAVIGATION BAR
-        $('#mobile-nav .container-fluid').hide();
 
-        $('#navigate-site').on('click', function() {
-            $('#mobile-nav .container-fluid').slideToggle();
+        $('#nav-content').hide();
+
+        $('#expand-me').on('click', function() {
+            $('#nav-content').slideToggle();
+            $('#nav-arrow').toggleClass('rotated');
+        });
+
+        $('#nav-content a').on('click', function() {
+            $('#nav-content').slideToggle();
+            $('#nav-arrow').toggleClass('rotated');
         });
 
         $('#nav-bar a').hover(function() {
