@@ -1,24 +1,42 @@
 $(document).ready(function() {
+    // Areas of the document that have been  dynamically revealed
+    var aboutHasRevealed, skillsetHasRevealed, projectsHaveRevealed, contactInfoHasRevealed = false;
+
+    // Only fade in elements when the page is above a certain width (not on tablets etc)
+    var validWidthForAnimations = $(window).width() >= 768;
+
     // Method to run page scale check and reveal sections if already visible by user
     var runInitialCheck = function() {
         // Check short fact section
         if (checkIfOnScreen($('#divider'))) {
-            revealShortFacts();
+            if (!aboutHasRevealed) {
+                revealShortFacts();
+                aboutHasRevealed = true;
+            }
         }
 
         // Check skill set section
         if (checkIfOnScreen($('#top-row-skills'))) {
-            revealSkills();
+            if (!skillsetHasRevealed) {
+                revealSkills();
+                skillsetHasRevealed = true;
+            }
         }
 
         // Check recent projects section
         if (checkIfOnScreen($('#job-app-img'))) {
-            displayProjects(topImages, true);
+            if (!projectsHaveRevealed) {
+                displayProjects(topImages, true);
+                projectsHaveRevealed = true;
+            }
         }
 
         // Check contact / social media section
         if (checkIfOnScreen($('#contact-information'))) {
-            revealContactDetails();
+            if (!contactInfoHasRevealed) {
+                revealContactDetails();
+                contactInfoHasRevealed = true;
+            }
         }
 
         windowSizeChecks();
@@ -67,10 +85,14 @@ $(document).ready(function() {
             $('#info-about-james').css('textAlign', 'center');
 
             $('.skill-text-summary').css('fontSize', '12px');
+
+            $('.fact-about-james').css('fontSize', '12px');
         } else {
             $('#info-about-james').css('textAlign', 'left');
 
             $('.skill-text-summary').css('fontSize', '16px');
+
+            $('.fact-about-james').css('fontSize', '16px');
         }
     }
 
@@ -80,24 +102,36 @@ $(document).ready(function() {
 
     // Check what content is visible on user scroll
     $(document).scroll(function() {
-        // Check if facts about James are visible by user
+        // Check short fact section
         if (checkIfOnScreen($('#divider'))) {
-            revealShortFacts();
+            if (!aboutHasRevealed) {
+                revealShortFacts();
+                aboutHasRevealed = true;
+            }
         }
 
-        // Check if skills are visible by user
+        // Check skill set section
         if (checkIfOnScreen($('#top-row-skills'))) {
-            revealSkills();
+            if (!skillsetHasRevealed) {
+                revealSkills();
+                skillsetHasRevealed = true;
+            }
         }
 
-        // Check if projects are visible by user
+        // Check recent projects section
         if (checkIfOnScreen($('#job-app-img'))) {
-            displayProjects(topImages, true);
+            if (!projectsHaveRevealed) {
+                displayProjects(topImages, true);
+                projectsHaveRevealed = true;
+            }
         }
 
         // Check contact / social media section
         if (checkIfOnScreen($('#contact-information'))) {
-            revealContactDetails();
+            if (!contactInfoHasRevealed) {
+                revealContactDetails();
+                contactInfoHasRevealed = true;
+            }
         }
     });
 
@@ -188,10 +222,12 @@ $(document).ready(function() {
     // END OF SUMMARY (SLIDESHOW)
 
     // ABOUT && SKILLSET
-
     var factLogos = [$('#uni-logo'), $('#git-logo'), $('#plym-logo')];
-    for (let i = 0; i < factLogos.length; i++) {
-        factLogos[i].hide();
+
+    var hideFactLogos = function() {
+        for (let i = 0; i < factLogos.length; i++) {
+            factLogos[i].hide();
+        }
     }
 
     // reveal of facts about James on scroll
@@ -215,9 +251,11 @@ $(document).ready(function() {
     var allSkillBasedContent = [topSkillLogos, topSkillHeaders, topSkillSummaries, topGitLinks, bottomSkillLogos, bottomSkillHeaders, bottomSkillSummaries, bottomGitLinks];
 
     // Keep skillset content hidden initially
-    for (let i = 0; i < allSkillBasedContent.length; i++) {
-        for (let j = 0; j < allSkillBasedContent[i].length; j++) {
-            allSkillBasedContent[i][j].css('opacity', 0);
+    var hideSkillset = function() {
+        for (let i = 0; i < allSkillBasedContent.length; i++) {
+            for (let j = 0; j < allSkillBasedContent[i].length; j++) {
+                allSkillBasedContent[i][j].css('opacity', 0);
+            }
         }
     }
 
@@ -364,9 +402,12 @@ $(document).ready(function() {
 
     var allContent = [contactImages, contactHeaders, contactAddresses];
 
-    for (let i = 0; i < allContent.length; i++) {
-        for (let j = 0; j < allContent[i].length; j++) {
-            allContent[i][j].css('opacity', '0');
+    // Hide contact images initially
+    var hideContactInfo = function() {
+        for (let i = 0; i < allContent.length; i++) {
+            for (let j = 0; j < allContent[i].length; j++) {
+                allContent[i][j].css('opacity', '0');
+            }
         }
     }
 
@@ -441,6 +482,18 @@ $(document).ready(function() {
     copyright.html('© ' + thisYear + ' James Hunt Some Rights Reserved');
 
     // END OF FOOTER
+
+    // Only allow animation reveals on specific devices
+    var hideAll = function () {
+        if (validWidthForAnimations) {
+            hideFactLogos();
+            hideSkillset();
+            hideContactInfo();
+        } else {
+            var aboutHasRevealed, skillsetHasRevealed, projectsHaveRevealed, contactInfoHasRevealed = true;
+        }
+    }
+    hideAll();
 });
 
 // Only call specific methods after all other HTML elements have loaded
