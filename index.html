@@ -23,14 +23,23 @@
                 visibility: hidden;
             }
 
+            #loading-content {
+                position: relative;
+                /*height: 400px;*/
+            }
+
+            #center-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                flex-direction: column;
+            }
+
             #loading {
-                position: absolute;
-                left: 50%;
-                top: 50%;
                 z-index: 1;
                 width: 75px;
                 height: 75px;
-                margin: -75px 0 0 -75px;
                 border: 8px solid #333;
                 border-radius: 50%;
                 border-top: 8px solid teal;
@@ -54,8 +63,10 @@
     <body onload="initiateLoad()">
         <!-- LOADING SCREEN CONTENT -->
         <div id="loading-content">
-            <div id="loading"></div>
-            <div id="foo" class="vertical-align"></div>
+            <div id="center-content">
+                <div id="loading"></div>
+                <div id="foo" class="vertical-align"></div>
+            </div>
         </div>
         <!-- END OF LOADING SCREEN CONTENT -->
         <div id="page-content">
@@ -586,6 +597,8 @@
         </div>
         <!-- JavaScript / CDN Links -->
         <script>
+            document.getElementById("loading-content").style.height = window.innerHeight + "px";
+
             function initiateLoad() {
                 setTimeout(showPage, 1000);
             }
