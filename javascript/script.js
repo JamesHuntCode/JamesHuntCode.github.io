@@ -166,7 +166,7 @@ $(document).ready(function() {
 
             switch (location) {
                 case "top":
-                    selectedElem = $("#nav-bar");
+                    selectedElem = $("#nav-bar-spacer");
                 break;
                 case "about-james":
                     selectedElem = $('#about-james');

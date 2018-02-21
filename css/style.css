@@ -975,6 +975,12 @@ body {
     margin-top: 30px;
 }
 
+#email-drop-button {
+    -moz-transition: transform 1.2s;
+    -webkit-transition: transform 1.2s;
+    transition: transform 1.2s;
+}
+
 #contact-form form {
     text-align: center;
 }
