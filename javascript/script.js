@@ -466,8 +466,8 @@ $(window).on('load', function() {
     $('#website-slide-content h1').hide();
     $('#website-slide-content h3').hide();
 
-    $('#website-slide-content h1').slideDown(1000);
-    $('#website-slide-content h3').delay(1000).slideDown(1000);
+    $('#website-slide-content h1').delay(1000).slideDown(1000);
+    $('#website-slide-content h3').delay(2000).slideDown(1000);
 
     $('#coding-slide-content h1').hide();
     $('#coding-slide-content h3').hide();
