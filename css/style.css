@@ -824,12 +824,11 @@ body {
 }
 
 #blog-container {
-    overflow-y: scroll;
+    
 }
 
 #blog-frame {
     min-width: 100%;
-    max-height: 400px;
 }
 
 #twitter-content {
