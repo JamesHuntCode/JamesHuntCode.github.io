@@ -823,6 +823,15 @@ body {
     box-shadow: 0px 0px 5px white;
 }
 
+#blog-container {
+    overflow-y: hidden;
+}
+
+#blog-frame {
+    min-width: 100%;
+    max-height: 400px;
+}
+
 #twitter-content {
     overflow: auto;
 }
