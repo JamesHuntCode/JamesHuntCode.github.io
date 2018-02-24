@@ -1,3 +1,9 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -91,6 +97,8 @@ body {
     top: 0;
 
     z-index: 9999;
+
+    overflow-x: hidden;
 }
 
 #nav-bar p {
@@ -825,12 +833,13 @@ body {
 
 #blog-container {
     -webkit-overflow-scrolling: touch;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 #blog-frame {
     height: 100%;
     width: 100%;
+    display: block;
 }
 
 #twitter-content {

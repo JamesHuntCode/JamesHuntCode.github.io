@@ -573,13 +573,13 @@ $(window).on('load', function() {
             if (running) {
                 // Automatic
                 topSlide.hide();
-                topSlide.show("slide", {direction: "right"}, 1000);
-                bottomSlide.hide("slide", {direction: "left"}, 1000);
+                topSlide.show("slide", {direction: "up"}, 1000);
+                bottomSlide.hide("slide", {direction: "down"}, 1000);
             } else {
                 // User requested
-                topSlide.show("slide", {direction: "right"}, 1000);
-                middleSlide.hide("slide", {direction: "left"}, 1000);
-                bottomSlide.hide("slide", {direction: "left"}, 1000);
+                topSlide.show("slide", {direction: "up"}, 1000);
+                middleSlide.hide("slide", {direction: "down"}, 1000);
+                bottomSlide.hide("slide", {direction: "down"}, 1000);
             }
 
             // Change slide controls
@@ -592,14 +592,14 @@ $(window).on('load', function() {
             if (running) {
                 // Automatic
                 middleSlide.hide();
-                middleSlide.show("slide", {direction: "right"}, 1000);
-                topSlide.hide("slide", {direction: "left"}, 1000);
+                middleSlide.show("slide", {direction: "up"}, 1000);
+                topSlide.hide("slide", {direction: "down"}, 1000);
             } else {
                 // User requested
                 middleSlide.hide();
-                middleSlide.show("slide", {direction: "right"}, 1000);
-                topSlide.hide("slide", {direction: "left"}, 1000);
-                bottomSlide.hide("slide", {direction: "left"}, 1000);
+                middleSlide.show("slide", {direction: "up"}, 1000);
+                topSlide.hide("slide", {direction: "down"}, 1000);
+                bottomSlide.hide("slide", {direction: "down"}, 1000);
             }
 
             // Introduce content
@@ -616,14 +616,14 @@ $(window).on('load', function() {
             if (running) {
                 // Automatic
                 bottomSlide.hide();
-                bottomSlide.show("slide", {direction: "right"}, 1000);
-                middleSlide.hide("slide", {direction: "left"}, 1000);
+                bottomSlide.show("slide", {direction: "up"}, 1000);
+                middleSlide.hide("slide", {direction: "down"}, 1000);
             } else {
                 // User requested
                 bottomSlide.hide();
-                bottomSlide.show("slide", {direction: "right"}, 1000);
-                topSlide.hide("slide", {direction: "left"}, 1000);
-                middleSlide.hide("slide", {direction: "left"}, 1000);
+                bottomSlide.show("slide", {direction: "up"}, 1000);
+                topSlide.hide("slide", {direction: "down"}, 1000);
+                middleSlide.hide("slide", {direction: "down"}, 1000);
             }
 
             // Introduce content
