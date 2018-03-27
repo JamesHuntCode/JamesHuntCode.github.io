@@ -94,6 +94,15 @@ $(document).ready(function() {
 
             $('.fact-about-james').css('fontSize', '16px');
         }
+
+        // Adjust photo of myself when on iPhone5 (320px)
+        if ($(window).width() <= 350) {
+            $('#photo-of-james').css('width', '200');
+            $('#photo-of-james').css('height', '200');
+        } else {
+            $('#photo-of-james').css('width', '300');
+            $('#photo-of-james').css('height', '300');
+        }
     }
 
     $(window).resize(function() {
@@ -369,29 +378,6 @@ $(document).ready(function() {
     });
 
     // END OF MY RECENT PROJECTS
-
-    // JAMES' SOCIAL MEDIA
-
-    $('#twitter-prof-link').hover(function() {
-        $(this).animate({color: '#808080'}, 250);
-    }, function() {
-        $(this).animate({color: '#333'}, 250);
-    });
-
-    var configProfile = {
-        "profile": {"screenName": 'JamesHuntCode'},
-        "id": '958381736337072129',
-        "domId": 'tweets',
-        "maxTweets": 2,
-        "enableLinks": true,
-        "showUser": false,
-        "showTime": true,
-        "showImages": false,
-        "lang": 'en'
-    }
-    twitterFetcher.fetch(configProfile);
-
-    // END OF JAMES' SOCIAL MEDIA
 
     // CONTACT JAMES
 
