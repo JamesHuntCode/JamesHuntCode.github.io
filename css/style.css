@@ -846,60 +846,6 @@ body {
     overflow: auto;
 }
 
-#twitter-feed-header {
-    padding: 30px 0px 10px;
-    font-weight: bolder;
-}
-
-#twit-link-wrap {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#twitter-prof-link {
-    font-family: "Montserrat", arial;
-    font-size: 14px;
-
-    color: #333;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#tweets {
-    border-top: 2px solid #333;
-}
-
-#tweets ul {
-    list-style: none;
-    margin-left: 0px;
-    padding-left: 0px;
-}
-
-#tweets li {
-    padding: 10px 0px;
-    list-style-position: outside;
-}
-
-#tweets p {
-    text-align: center;
-    font-family: "Montserrat", arial;
-    font-size: 18px;
-
-    margin: 40px 10px 0px 10px;
-}
-
-#tweets a {
-    text-align: center;
-    padding: 10px;
-
-    font-family: "Montserrat", arial;
-    font-size: 16px;
-
-    color: teal;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 /* END OF JAMES' SOCIAL MEDIA */
 
 /* CONTACT JAMES */
