@@ -1,1064 +1,583 @@
-html {
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+html, body {
+  overflow-x: hidden;
 }
 
-body {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    overflow-x: hidden;
+.modal {
+ overflow-y: auto;
 }
+
+.modal-open {
+ overflow: auto;
+ padding-right: 0px !important;
+}
+
+#slideshow .carousel, .carousel-item, .active {
+    height: 100%;
+}
+
+#slideshow .carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide-main {
+    text-shadow: 0px 0px 5px #000;
+}
+
+.slide-sub {
+    padding: 0px !important;
+    margin-top: 0px !important;
+    text-shadow: 0px 0px 5px #333;
+}
+
+.no-p {
+    margin-bottom: 70px !important;
+    padding: 0px !important;
+}
+
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-    .main-heading {
-        font-size: 22px;
+    .content-section {
+        padding: 25px 0px;
     }
 
-    .sub-heading {
-        font-size: 15px;
+    .dynamic-container {
+        width: 97.5%;
     }
 
-    .footer-heading {
+    .section-heading {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .sub-header {
         font-size: 20px;
+    }
+
+    .sub-header-left {
+        font-size: 20px;
+    }
+
+    .p-mid {
+        font-size: 12px;
+    }
+
+    .footer-content {
+        display: none;
+    }
+
+    .copyright {
+        padding-top: 25px;
+    }
+
+    .skill-set-image {
+        height: 75px;
+        width: 75px;
+    }
+
+    .highlight-image {
+        height: 150px;
+        width: 150px;
+    }
+
+    #email-me-form input, textarea {
+        width: 100%;
     }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-    .main-heading {
+    .content-section {
+        padding: 25px 0px;
+    }
+
+    .dynamic-container {
+        width: 97.5%;
+    }
+
+    .section-heading {
         font-size: 35px;
+        text-align: center;
     }
 
-    .sub-heading {
-        font-size: 15px;
+    .sub-header {
+        font-size: 25px;
     }
 
-    .footer-heading {
-        font-size: 20px;
+    .sub-header-left {
+        font-size: 25px;
+    }
+
+    .p-mid {
+        font-size: 12px;
+    }
+
+    .footer-content {
+        display: none;
+    }
+
+    .copyright {
+        padding-top: 25px;
+    }
+
+    .skill-set-image {
+        height: 75px;
+        width: 75px;
+    }
+
+    .highlight-image {
+        height: 150px;
+        width: 150px;
+    }
+
+    #email-me-form input, textarea {
+        width: 100%;
     }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    .main-heading {
+    .content-section {
+        padding: 50px 0px;
+    }
+
+    .dynamic-container {
+        width: 97.5%;
+    }
+
+    .section-heading {
         font-size: 35px;
+        text-align: left;
     }
 
-    .sub-heading {
-        font-size: 15px;
+    .sub-header {
+        font-size: 25px;
     }
 
-    .footer-heading {
-        font-size: 27px;
+    .sub-header-left {
+        font-size: 25px;
+    }
+
+    .sub-header-footer {
+        font-size: 25px;
+    }
+
+    .p-mid {
+        font-size: 14px;
+    }
+
+    .footer-link {
+        font-size: 14px;
+    }
+
+    .footer-content {
+        display: none;
+    }
+
+    .copyright {
+        padding-top: 25px;
+    }
+
+    .skill-set-image {
+        height: 100px;
+        width: 100px;
+    }
+
+    .highlight-image {
+        height: 200px;
+        width: 200px;
+    }
+
+    #email-me-form input, textarea {
+        width: 100%;
     }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    .main-heading {
-        font-size: 50px;
+    .content-section {
+        padding: 100px 0px;
     }
 
-    .sub-heading {
-        font-size: 25px;
+    .dynamic-container {
+        width: unset;
     }
 
-    .footer-heading {
-        font-size: 27px;
+    .section-heading {
+        font-size: 45px;
+        text-align: left;
+    }
+
+    .sub-header {
+        font-size: 30px;
+    }
+
+    .sub-header-left {
+        font-size: 30px;
+    }
+
+    .sub-header-footer {
+        font-size: 30px;
+    }
+
+    .p-mid {
+        font-size: 16px;
+    }
+
+    .footer-link {
+        font-size: 16px;
+    }
+
+    .footer-content {
+        display: unset;
+    }
+
+    .copyright {
+        padding-top: 100px;
+    }
+
+    .skill-set-image {
+        height: 150px;
+        width: 150px;
+    }
+
+    .highlight-image {
+        height: 200px;
+        width: 200px;
+    }
+
+    #email-me-form input, textarea {
+        width: 80%;
     }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-    .main-heading {
-        font-size: 50px;
+    .content-section {
+        padding: 100px 0px;
     }
 
-    .sub-heading {
-        font-size: 25px;
+    .dynamic-container {
+        width: unset;
     }
 
-    .footer-heading {
-        font-size: 27px;
+    .section-heading {
+        font-size: 45px;
+        text-align: left;
+    }
+
+    .sub-header {
+        font-size: 30px;
+    }
+
+    .sub-header-left {
+        font-size: 30px;
+    }
+
+    .sub-header-footer {
+        font-size: 30px;
+    }
+
+    .p-mid {
+        font-size: 16px;
+    }
+
+    .footer-link {
+        font-size: 20px;
+    }
+
+    .footer-content {
+        display: unset;
+    }
+
+    .copyright {
+        padding-top: 100px;
+    }
+
+    .skill-set-image {
+        height: 150px;
+        width: 150px;
+    }
+
+    .highlight-image {
+        height: 275px;
+        width: 275px;
+    }
+
+    #email-me-form input, textarea {
+        width: 80%;
     }
 }
 
-/* NAVIGATION BAR */
-
-#nav-bar {
-    text-align: center;
-    background-color: #333;
-
-    width: 100%;
-    position: fixed;
-    top: 0;
-
-    z-index: 9999;
-
-    overflow-x: hidden;
-}
-
-#nav-bar p {
-    margin: 10px;
-    padding: 5px;
-}
-
-#nav-bar a {
-    font-family: "Montserrat", arial;
-    font-size: 15px;
-
-    text-decoration: none;
-    color: white;
-
-    cursor: pointer;
-}
-
-#nav-bar-spacer {
-    height: 50px;
-    width: 100%;
-}
-
-#mobile-nav {
-    text-align: center;
-    background-color: #333;
-
-    width: 100%;
-    position: fixed;
-    top: 0;
-
-    z-index: 9999;
-}
-
-#mobile-nav .container-fluid p {
-    margin: 5px;
-    padding: 5px;
-}
-
-#mobile-nav a {
-    font-family: "Montserrat", arial;
-    font-size: 15px;
-
-    text-decoration: none;
-    color: white;
-
-    cursor: pointer;
-}
-
-#expand-me {
-    cursor: pointer;
-}
-
-#navigate-site {
-    font-family: "Montserrat", arial;
-    font-size: 15px;
-
-    text-decoration: none;
-    color: white;
-
-    cursor: pointer;
-
-    margin: 0px;
-    padding: 10px;
-
-    display: inline-block;
-
-    vertical-align: middle;
-}
-
-#nav-arrow {
-    height: 5px;
-    width: 5px;
-
-    padding: 10px;
-    margin: 10px;
-
-    display: inline-block;
-
-    vertical-align: middle;
-
-    background-image: url('images/triangle-icon.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    cursor: pointer;
-
-    -moz-transition: transform 0.5s;
-    -webkit-transition: transform 0.5s;
-    transition: transform 0.5s;
-}
-
-/* END OF NAVIGATION BAR */
-
-/* SUMMARY (SLIDESHOW) */
-
-#summary {
-    height: 500px;
-
-    margin: 0px;
-    padding: 0px;
-}
-
-.image-stack {
-    height: 600px;
-    width: 100%;
-
-    position: absolute;
-
-    margin: 0px;
-    padding: 0px;
-
-    z-index: 1;
-}
-
-#minigames {
-    background-image: url('images/game-photo.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#coding-passion {
-    background-image: url('images/code-photo2.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#stunning-websites {
-    background-image: url('images/stunning-web-picture1.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#slideshow-controls {
-    text-align: center;
-}
-
-.slideshow-content {
-    text-align: center;
-    position: relative;
-    top: 100px;
-}
-
-.slideshow-content h1 {
-    font-size: 60px;
-    font-weight: bold;
-    font-family: "Montserrat", arial;
-
-    margin: 15px;
-    padding: 0px;
-}
-
-.slideshow-content h3 {
-    font-size: 30px;
-    font-weight: bold;
-    font-family: "Montserrat", arial;
-
-    margin: 0px;
-    padding: 0px;
-}
-
-/* code repetition due to issues with CSS classes */
-
-#github-profile-link {
-    font-size: 30px;
-    font-weight: bold;
-    font-family: "Montserrat", arial;
-
-    margin: 0px;
-    padding: 0px;
-
-    color: #ffffff;
-
-    text-decoration: none;
-
-    cursor: pointer;
-}
-
-#github-frogger-link {
-    font-size: 30px;
-    font-weight: bold;
-    font-family: "Montserrat", arial;
-
-    margin: 0px;
-    padding: 0px;
-
-    color: #ffffff;
-
-    text-decoration: none;
-
-    cursor: pointer;
-}
-
-#github-defender-link {
-    font-size: 30px;
-    font-weight: bold;
-    font-family: "Montserrat", arial;
-
-    margin: 0px;
-    padding: 0px;
-
-    color: #ffffff;
-
-    text-decoration: none;
-
-    cursor: pointer;
-}
-
-/* end of repeated code */
-
-#website-slide-content h1, #website-slide-content h3 {
-    color: #333;
-    z-index: 9999;
-}
-
-#coding-slide-content h1, #coding-slide-content h3 {
-    color: #ffffff;
-    text-shadow: 2px 2px 5px black;
-    z-index: 9999;
-
-    position: relative;
-    top: 75px;
-}
-
-#minigame-slide-content h1, #minigame-slide-content h3 {
-    color: #ffffff;
-    text-shadow: 1px 1px 5px black;
-    z-index: 9999;
-
-    position: relative;
-    top: 75px;
-}
-
-.slideshow-control-button {
-    height: 20px;
-    width: 20px;
-
-    margin: 2px;
-    padding: 2px;
-
-    border-radius: 8px;
-    border: 1px solid white;
-
-    position: relative;
-    top: 560px;
-    display: inline-block;
-
-    cursor: pointer;
-
-    z-index: 9998;
-}
-
-.active {
-    background-color: #808080;
-}
-
-.not-active {
+.nav-background {
     background-color: #333;
 }
 
-/* END OF SUMMARY (SLIDESHOW) */
-
-#spacer {
-    height: 100px;
+.nav-theme a {
+    color: #ffffff;
 }
 
-/* ABOUT JAMES && JAMES' SKILLSET */
-/* ABOUT JAMES */
-
-#about-james {
-    padding: 30px 0px 60px 0px;
+.nav-theme a:hover {
+    color: #E0E0E0;
 }
 
-.main-heading {
-    font-family: "Quicksand", arial;
-    /*font-size: 50px;*/
+.section-heading {
+    font-family: "Raleway";
+
+    text-decoration: underline;
+
+    padding-bottom: 100px;
+}
+
+.section-light {
+    background-color: #ffffff;
+}
+
+.section-dark {
+    background-color: #f5f5f5;
+}
+
+.sub-header {
+    font-family: "Raleway";
+
     text-align: center;
-
-    margin: 10px;
-    padding: 5px;
+    text-decoration: underline;
 }
 
-.sub-heading {
-    font-family: "Quicksand", arial;
-    /*font-size: 25px;*/
+.sub-header-footer {
+    font-family: "Raleway";
+
     text-align: center;
+    text-decoration: underline;
 
-    margin: 10px;
-    padding: 5px;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
-#about-james-header {
-    margin: 0px 0px 30px 0px;
+.modal-launcher {
+    cursor: pointer;
 }
 
-#photo-of-james {
-    height: 300px;
-    width: 300px;
+.modal-title {
+    font-family: "Raleway";
+    font-size: 27px;
 
-    box-shadow: 0px 0px 15px #333;
-
-    margin: 20px auto;
-    padding: 50px;
-
-    background-image: url('images/photo-of-james.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    border: 3px solid #333;
-    border-radius: 360px;
-}
-
-#info-about-james {
     text-align: left;
+}
 
-    font-family: "Montserrat", arial;
+.modal-sub-title {
+    font-family: "Raleway";
+    font-size: 23px;
+
+    text-align: left;
+}
+
+.modal-text {
+    padding: 15px 15px 15px 0px;
     font-size: 16px;
-
-    margin: 10px;
 }
 
-#divider {
-    height: 2px;
-    width: 75%;
-
-    background-color: #E0E0E0;
-
-    margin: 30px auto;
+.modal-link {
+    color: #212121;
 }
 
-.fact-header {
-    font-family: "Quicksand", arial;
-    font-size: 25px;
-    text-align: center;
-
-    margin: 10px;
-    padding: 5px;
+.modal-link:hover {
+    color: #000000;
 }
 
-.fact-logo-wrapper {
-    min-height: 100px;
-    min-width: 100px;
+#doodle-jump-modal .modal-body {
+    position: relative;
+}
+
+.sub-header-left {
+    font-family: "Raleway";
+
+    text-align: left;
+    text-decoration: underline;
+}
+
+.skill-set-image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     margin: 50px auto;
+
+    cursor: pointer;
 }
 
-.about-image {
-    height: 100px;
-    width: 100px;
+#desktop {
+    background-image: url("../images/desktop.png");
+}
 
+#mobile {
+    background-image: url("../images/mobile.png");
+}
+
+#web {
+    background-image: url("../images/web.png");
+}
+
+#database {
+    background-image: url("../images/database.png");
+}
+
+#user-interface {
+    background-image: url("../images/user-interface.png");
+}
+
+#uml {
+    background-image: url("../images/uml.png");
+}
+
+.highlight-image {
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: contain;
 
     margin: 50px auto;
-}
-
-#uni-logo {
-    background-image: url('../css/images/plymouth-uni.png');
-}
-
-#git-logo {
-    background-image: url('../css/images/git-logo.png');
-}
-
-#plym-logo {
-    background-image: url('../css/images/plymouth-city-council.png');
-    border-radius: 360px;
-}
-
-.fact-about-james {
-    text-align: center;
-
-    font-family: "Montserrat", arial;
-    font-size: 16px;
-
-    margin: 30px 10px 10px 10px;
-    padding: 0px 50px;
-}
-
-/* END OF ABOUT JAMES */
-/* JAMES' SKILLSET */
-
-#professional-skillset {
-    background-color: #E8E8EE;
-
-    padding: 30px 0px 50px 0px;
-}
-
-#skillset-main-head, #skillset-sub-head {
-    color: teal;
-}
-
-#skillset-sub-head {
-    margin-bottom: 40px;
-}
-
-.skillset-logo {
-    height: 100px;
-    width: 100px;
-
-    margin: 30px auto;
-
-    border-radius: 15px;
-}
-
-.skill-header {
-    font-family: "Montserrat", arial;
-    font-size: 25px;
-    font-weight: bold;
-
-    text-align: center;
-
-    color: teal;
-
-    margin: 10px;
-    padding: 5px;
-}
-
-.skill-text-summary {
-    text-align: center;
-
-    font-family: "Montserrat", arial;
-    font-size: 16px;
-
-    color: #333;
-
-    margin: 20px 10px 20px 10px;
-    padding: 10px 10px 0px 10px;
-}
-
-.github-repo-link-wrapper {
-    text-align: center;
-}
-
-.github-repo-link {
-    font-family: "Montserrat", arial;
-    font-size: 16px;
-
-    text-decoration: none;
-    color: teal;
-    cursor: pointer;
-
-    margin: 0px;
-    padding: 0px;
-}
-
-.github-repo-link:hover {
-    text-decoration: none;
-    color: teal;
-    cursor: pointer;
-}
-
-/* TOP ROW OF SKILLS */
-
-#c-sharp-logo {
-    background-image: url('images/skillset-logos/visual-studio.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#javascript-logo {
-    background-image: url('images/skillset-logos/javascript.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#sql-logo {
-    background-image: url('images/skillset-logos/sql.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* BOTTOM ROW OF SKILLS */
-
-#processing-logo {
-    background-image: url('images/skillset-logos/processing.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#html-css-logo {
-    background-image: url('images/skillset-logos/html.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#android-logo {
-    background-image: url('images/skillset-logos/android-studio-logo.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* END OF JAMES' SKILLSET */
-/* END OF ABOUT JAMES && JAMES' SKILLSET */
-
-/* MY RECENT PROJECTS */
-
-#james-recent-projects {
-    padding: 30px 0px;
-}
-
-#james-projects-sub-header {
-    margin-bottom: 40px;
-}
-
-.project-sub-header {
-    font-family: "Montserrat", arial;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-
-    margin: 10px;
-    padding: 5px;
-}
-
-.language-used-header {
-    font-family: "Montserrat", arial;
-    font-size: 20px;
-    text-align: center;
-
-    margin: 10px;
-    padding: 5px;
-}
-
-.language-used-header-lower {
-    font-family: "Montserrat", arial;
-    font-size: 20px;
-    text-align: center;
-
-    margin: 10px 10px 10px 10px;
-    padding: 5px 5px 5px 5px;
-}
-
-.language-used-header span, .language-used-header-lower span {
-    font-weight: bold;
-}
-
-#top-3-projects {
-    padding: 0px;
-}
-
-.project-img-wrapper {
-    min-height: 250px;
-}
-
-.project-gif-top {
-    height: 300px;
-    width: 300px;
-
-    margin: 30px auto;
-
-    border-radius: 10px;
-
-    box-shadow: 0px 0px 10px #333;
-
-    transform:scale(0);
-    transform-origin:center center;
-    transition: transform 800ms ease;
-}
-
-.full-size-top {
-    transform: scale(1);
-}
-
-.project-gif-bottom {
-    height: 200px;
-    width: 200px;
-
-    margin: 30px auto;
-
-    border-radius: 10px;
-
-    box-shadow: 0px 0px 10px #333;
-
-    transform:scale(0);
-    transform-origin:center center;
-    transition: transform 800ms ease;
-}
-
-.full-size-bottom {
-    transform: scale(1);
-}
-
-#defender-img {
-    background-image: url('images/game-shots/defender.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#doodle-jump-img {
-    background-image: url('images/game-shots/doodle-jump.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#galaga-img {
-    background-image: url('images/game-shots/galaga.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.direct-user-down {
-    text-align: center;
-
-    font-family: "Montserrat", arial;
-    font-size: 14px;
-    font-weight: bold;
-
-    margin: 15px 5px 5px 5px;
-}
-
-.drop-down-button {
-    height: 50px;
-    width: 50px;
-
-    margin: 10px auto;
-
-    background-image: url('images/down-arrow.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    cursor: pointer;
-
-    -moz-transition: transform 0.8s;
-    -webkit-transition: transform 0.8s;
-    transition: transform 0.8s;
-
-    opacity: 0.7;
-}
-
-.rotated {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-
-#bottom-4-projects {
-    background-color: ;
-    padding: 5px 0px 20px 0px;
-}
-
-#job-app-img {
-    background-image: url('images/game-shots/job-app.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#flappy-bird-img {
-    background-image: url('images/game-shots/flappy-bird.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#pong-img {
-    background-image: url('images/game-shots/pong.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#car-hire-img {
-    background-image: url('images/game-shots/car-hire.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#view-all {
-    text-align: center;
-
-    font-family: "Montserrat", arial;
-    font-size: 16px;
-    font-weight: bold;
-
-    margin: 10px 10px 0px 10px;
-    padding: 5px 5px 0px 10px;
-}
-
-#view-all a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #333;
-}
-
-/* END OF MY RECENT PROJECTS */
-
-/* JAMES' SOCIAL MEDIA */
-
-#james-social-media {
-    background-color: teal;
-
-    padding: 30px 0px;
-}
-
-#social-media-heading, #social-media-sub-heading {
-    color: white;
-}
-
-.social-media-content-wrapper {
-    min-height: 400px;
-}
-
-.social-media-content {
-    height: 400px;
-    width: 100%;
-
-    margin: 20px auto;
-
-    background-color: white;
-
-    box-shadow: 0px 0px 5px white;
-}
-
-#blog-container {
-    -webkit-overflow-scrolling: touch;
-    overflow-y: auto;
-}
-
-#blog-frame {
-    height: 100%;
-    width: 100%;
-    display: block;
-}
-
-#twitter-content {
-    overflow: auto;
-}
-
-/* END OF JAMES' SOCIAL MEDIA */
-
-/* CONTACT JAMES */
-
-#contact-james {
-    padding: 30px 0px;
-}
 
-.contact-content-wrapper {
-    min-height: 80px;
-    min-width: 80px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #333;
 }
 
-.contact-info-image {
-    height: 80px;
-    width: 80px;
-
-    margin: 30px auto;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#email-img {
-    background-image: url("images/website-logos/email.png");
-}
-
-#linked-in-img {
-    background-image: url("images/website-logos/linkedin.png");
-}
-
-#twitter-img {
-    background-image: url("images/website-logos/twitter.png");
-}
-
-#github-img {
-    background-image: url("images/website-logos/github.png");
-}
-
-.contact-method-header {
-    font-family: "Montserrat", arial;
-    font-size: 20px;
-
-    color: teal;
-
-    text-align: center;
-
-    margin: 10px;
-    padding: 5px;
-
-    font-weight: bold;
-}
-
-.contact-method-no-link {
-    text-align: center;
-
-    color: #333;
-
-    font-family: "Montserrat", arial;
-    font-size: 15px;
-
-    text-decoration: none;
-}
-
-.contact-method-text-wrapper {
-    text-align: center;
-}
-
-#contact-james a {
-    color: #333;
-
-    font-family: "Montserrat", arial;
-    font-size: 15px;
-
-    text-decoration: none;
-
-    cursor: pointer;
-}
-
-#contact-james a:hover {
-    text-decoration: none;
-    color: #333;
-}
-
-/* END OF CONTACT JAMES */
-
-/* CONTACT FORM */
-
-#email-direct {
-    margin-top: 30px;
-}
-
-#email-drop-button {
-    -moz-transition: transform 1.2s;
-    -webkit-transition: transform 1.2s;
-    transition: transform 1.2s;
-}
-
-#contact-form form {
-    text-align: center;
+#car-hire {
+    background-image: url("../images/car-hire.png");
 }
 
-#contact-form input {
-    text-align: center;
-    height: 50px;
-    margin: 10px;
-
-    font-family: "Montserrat", arial;
-    font-size: 16px;
-
-    width: 75%;
-}
-
-#contact-form input:focus, #contact-form textarea:focus {
-    outline: none !important;
-    border: 1px solid teal;
-    box-shadow: 0px 0px 5px teal;
-}
-
-#submit-button:hover {
-    outline: none !important;
-    border: 1px solid teal;
-    box-shadow: 0px 0px 5px teal;
+#rusty-repairs {
+    background-image: url("../images/rusty-repairs.png");
 }
 
-#contact-form textarea {
-    height: 100px;
-    width: 75%;
-
-    overflow-x: hidden;
-}
-
-#contact-form span {
-    color: red;
+#careers-app {
+    background-image: url("../images/careers-app.png");
 }
 
-#contact-form p {
-    font-family: "Montserrat", arial;
-    padding: 10px;
+#doodle-jump {
+    background-image: url("../images/doodle-jump.png");
 }
 
-/* END OF CONTACT FORM */
-
-/* FOOTER */
-
-#footer {
-    background-color: #333;
-    padding: 20px 0px;
+#pong {
+    background-image: url("../images/pong.png");
 }
-
-.footer-heading {
-    font-family: "Montserrat", arial;
-
-    text-align: center;
-    color: teal;
 
-    margin: 10px;
-    padding: 5px;
+#flappy-bird {
+    background-image: url("../images/flappy-bird.png");
 }
 
 .footer-link {
-    text-align: center;
+    font-family: "Raleway";
+
+    text-align: left;
+
+    padding: 5px 5px 5px 0px;
 }
 
-.footer-link a {
-    font-family: "Montserrat", arial;
-    font-size: 16px;
-    color: white;
-
-    margin: 5px;
-    padding: 5px;
-}
-
-.footer-link a:hover {
+.no-underline {
     text-decoration: none;
-    cursor: pointer;
-    color: white;
 }
 
-#work-with-james {
+
+.logo-wrapper {
     text-align: center;
-
-    font-family: "Montserrat", arial;
-    font-size: 15px;
-    color: white;
-
-    margin: 5px;
-    padding: 5px;
 }
 
-.redirect-user {
-    text-align: center;
+.p-mid {
+    font-family: "Raleway";
 
-    font-family: "Montserrat", arial;
+    text-align: left;
+}
+
+.p-small {
+    font-family: "Raleway";
     font-size: 16px;
-    color: white;
 
-    margin: 5px;
-    padding: 5px;
+    text-align: left;
+}
+
+#email-me-form {
+    width: 100%;
+}
+
+#email-me-form span {
+    color: red;
+}
+
+#email-me-form input {
+    font-family: "Raleway";
+    font-size: 16px;
+
+    margin: 0px 0px 15px 0px;
+}
+
+#email-me-form textarea {
+    height: 145px;
+
+    margin: 0px 0px 15px 0px;
+
+    font-family: "Raleway";
+    font-size: 16px;
+}
+
+.network-link {
+    color: #212121;
+}
+
+.network-link:hover {
+    color: #000000;
+}
+
+#submit-button {
+    height: 50px;
+    cursor: pointer;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+}
+
+.padded {
+    padding-bottom: 15px;
+}
+
+.extra-padded {
+    padding-bottom: 30px;
+}
+
+.extra-padding-top {
+    padding-top: 15px;
+}
+
+.extra-padding-bottom {
+    margin-bottom: 30px;
+}
+
+.section-black {
+    background-color: #333;
+}
+
+#footer a {
+    color: #ffffff;
+}
+
+#footer a:hover {
+    text-decoration: underline;
 
     cursor: pointer;
 }
 
-.under-footer-text {
-    text-align: center;
-
-    font-family: "Montserrat", arial;
-    font-size: 12px;
-    color: teal;
-
-    margin: 10px 5px 5px 5px;
-    padding: 10px 5px 5px 5px;
+.text-white {
+    color: #ffffff;
 }
-
-/* END OF FOOTER */
