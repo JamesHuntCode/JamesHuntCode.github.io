@@ -58,6 +58,14 @@ html, body {
         text-align: center;
     }
 
+    .click-indicator-text {
+        text-align: center;
+
+        font-size: 12px;
+
+        padding-bottom: 50px;
+    }
+
     .sub-header {
         font-size: 20px;
     }
@@ -108,6 +116,14 @@ html, body {
         text-align: center;
     }
 
+    .click-indicator-text {
+        text-align: center;
+
+        font-size: 12px;
+
+        padding-bottom: 50px;
+    }
+
     .sub-header {
         font-size: 25px;
     }
@@ -156,6 +172,14 @@ html, body {
     .section-heading {
         font-size: 35px;
         text-align: left;
+    }
+
+    .click-indicator-text {
+        text-align: left;
+
+        font-size: 14px;
+
+        padding-bottom: 75px;
     }
 
     .sub-header {
@@ -216,6 +240,14 @@ html, body {
         text-align: left;
     }
 
+    .click-indicator-text {
+        text-align: left;
+
+        font-size: 16px;
+
+        padding-bottom: 100px;
+    }
+
     .sub-header {
         font-size: 30px;
     }
@@ -272,6 +304,14 @@ html, body {
     .section-heading {
         font-size: 45px;
         text-align: left;
+    }
+
+    .click-indicator-text {
+        text-align: left;
+
+        font-size: 16px;
+
+        padding-bottom: 100px;
     }
 
     .sub-header {
@@ -335,6 +375,14 @@ html, body {
     text-decoration: underline;
 
     padding-bottom: 100px;
+}
+
+.has-text-under {
+    padding-bottom: 5px;
+}
+
+.click-indicator-text {
+    font-family: "Raleway";
 }
 
 .section-light {
@@ -492,13 +540,6 @@ html, body {
 
 .p-mid {
     font-family: "Raleway";
-
-    text-align: left;
-}
-
-.p-small {
-    font-family: "Raleway";
-    font-size: 16px;
 
     text-align: left;
 }
