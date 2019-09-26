@@ -2,6 +2,10 @@ html, body {
   overflow-x: hidden;
 }
 
+.navbar-brand, .navbar a {
+    font-family: "Raleway", arial;
+}
+
 .modal {
  overflow-y: auto;
 }
@@ -11,13 +15,77 @@ html, body {
  padding-right: 0px !important;
 }
 
-#slideshow .carousel, .carousel-item, .active {
-    height: 100%;
+/* code for the welcome section */
+
+#main-image-wrapper {
+    width: auto;
+    position: relative;
 }
 
-#slideshow .carousel-inner {
-    height: 100%;
+#welcome-image {
+    min-height: 300px;
+    max-height: 300px;
 }
+
+.comp-header {
+    font-size: unset !important;
+}
+
+@media only screen and (min-width : 992px) {
+    #welcome-image {
+        max-height: 100%;
+        max-width: 100%;
+
+        width: auto;
+        height: auto;
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        margin: auto;
+
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .cn {
+        display: table-cell;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .inner {
+        display: inline-block;
+        width: 200px; height: 200px;
+    }
+
+}
+
+@media only screen and (max-width : 992px) {
+    #welcome-image {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        max-height: 75%;
+        max-width: 80%;
+
+        width: auto;
+        height: auto;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        margin: auto;
+    }
+}
+
+/* end of code for the welcome section */
 
 .fill {
     width: 100%;
@@ -55,7 +123,7 @@ html, body {
 
     .section-heading {
         font-size: 30px;
-        text-align: center;
+        text-align: left;
     }
 
     .click-indicator-text {
@@ -113,7 +181,7 @@ html, body {
 
     .section-heading {
         font-size: 35px;
-        text-align: center;
+        text-align: left;
     }
 
     .click-indicator-text {
@@ -157,6 +225,8 @@ html, body {
     #email-me-form input, textarea {
         width: 100%;
     }
+
+
 }
 
 /* Small Devices, Tablets */
@@ -374,7 +444,7 @@ html, body {
 
     text-decoration: underline;
 
-    padding-bottom: 100px;
+    padding-bottom: 10%;
 }
 
 .has-text-under {
@@ -410,40 +480,6 @@ html, body {
     padding-bottom: 20px;
 }
 
-.modal-launcher {
-    cursor: pointer;
-}
-
-.modal-title {
-    font-family: "Raleway";
-    font-size: 27px;
-
-    text-align: left;
-}
-
-.modal-sub-title {
-    font-family: "Raleway";
-    font-size: 23px;
-
-    text-align: left;
-}
-
-.modal-text {
-    padding: 15px 15px 15px 0px;
-    font-size: 16px;
-}
-
-.modal-link {
-    color: #212121;
-}
-
-.modal-link:hover {
-    color: #000000;
-}
-
-#doodle-jump-modal .modal-body {
-    position: relative;
-}
 
 .sub-header-left {
     font-family: "Raleway";
@@ -452,133 +488,10 @@ html, body {
     text-decoration: underline;
 }
 
-.skill-set-image {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    margin: 50px auto;
-
-    cursor: pointer;
-}
-
-#desktop {
-    background-image: url("../images/desktop.png");
-}
-
-#mobile {
-    background-image: url("../images/mobile.png");
-}
-
-#web {
-    background-image: url("../images/web.png");
-}
-
-#database {
-    background-image: url("../images/database.png");
-}
-
-#user-interface {
-    background-image: url("../images/user-interface.png");
-}
-
-#uml {
-    background-image: url("../images/uml.png");
-}
-
-.highlight-image {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    margin: 50px auto;
-
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #333;
-}
-
-#car-hire {
-    background-image: url("../images/car-hire.png");
-}
-
-#rusty-repairs {
-    background-image: url("../images/rusty-repairs.png");
-}
-
-#careers-app {
-    background-image: url("../images/careers-app.png");
-}
-
-#doodle-jump {
-    background-image: url("../images/doodle-jump.png");
-}
-
-#pong {
-    background-image: url("../images/pong.png");
-}
-
-#flappy-bird {
-    background-image: url("../images/flappy-bird.png");
-}
-
-.footer-link {
-    font-family: "Raleway";
-
-    text-align: left;
-
-    padding: 5px 5px 5px 0px;
-}
-
-.no-underline {
-    text-decoration: none;
-}
-
-
-.logo-wrapper {
-    text-align: center;
-}
-
 .p-mid {
     font-family: "Raleway";
 
     text-align: left;
-}
-
-#email-me-form {
-    width: 100%;
-}
-
-#email-me-form span {
-    color: red;
-}
-
-#email-me-form input {
-    font-family: "Raleway";
-    font-size: 16px;
-
-    margin: 0px 0px 15px 0px;
-}
-
-#email-me-form textarea {
-    height: 145px;
-
-    margin: 0px 0px 15px 0px;
-
-    font-family: "Raleway";
-    font-size: 16px;
-}
-
-.network-link {
-    color: #212121;
-}
-
-.network-link:hover {
-    color: #000000;
-}
-
-#submit-button {
-    height: 50px;
-    cursor: pointer;
 }
 
 .underline {
@@ -605,20 +518,149 @@ html, body {
     margin-bottom: 30px;
 }
 
+/* code for experience section */
+
+.experience-photo {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 0;
+    margin: 0;
+}
+
+.GE {
+    background-image: url("../images/GE.png");
+}
+
+.BTL {
+    background-image: url("https://pbs.twimg.com/profile_images/1064818443826941953/2XBiNgv5_400x400.jpg");
+
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 50%;
+
+    margin-left: 5px !important;
+    margin-top: 2px !important;
+}
+
+.u-o-p {
+    background-image: url("../images/plym_uni.png");
+
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 50%;
+
+    margin-left: 5px !important;
+}
+
+.compsoc {
+    background-image: url("../images/compsoc.jpg");
+
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 50%;
+
+    margin-left: 5px !important;
+    margin-top: 2px !important;
+}
+
+@media only screen and (min-width : 480px) {
+    .experience-photo {
+        height: 95px;
+        width: 95px;
+    }
+
+    .BTL {
+        height: 90px !important;
+        width: 90px !important;
+    }
+
+    .u-o-p {
+        height: 110px !important;
+        width: 100px !important;
+        margin-top: -15px !important;
+    }
+
+    #btl-header, #uop-header {
+        max-width: unset !important;
+    }
+
+    #btl-col-container {
+        max-width: 285px;
+    }
+
+    #uop-col-container {
+        max-width: 335px;
+    }
+}
+
+@media only screen and (max-width : 479px) {
+    .experience-photo {
+        height: 80px;
+        width: 80px;
+
+        margin-top: 5px;
+    }
+
+    .BTL {
+        height: 80px !important;
+        width: 80px !important;
+    }
+
+    .u-o-p {
+        height: 100px !important;
+        width: 90px !important;
+        margin-top: -12px !important;
+    }
+
+    #btl-header {
+        max-width: 200px;
+    }
+
+    #uop-header {
+        max-width: 220px;
+    }
+
+    #btl-col-container {
+        max-width: 250px;
+    }
+
+    #uop-col-container {
+        max-width: 250px;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    #uop-image-container {
+        margin: 0 10px 0 0 !important;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    #uop-image-container {
+        margin: 0 20px 0 0 !important;
+    }
+}
+
+@media only screen and (max-width : 370px) {
+    .BTL, .experience-photo, .hidden-xs {
+        display: none;
+    }
+}
+
+/* end of code for experience section */
+
 .section-black {
     background-color: #333;
 }
 
-#footer a {
-    color: #ffffff;
-}
-
-#footer a:hover {
-    text-decoration: underline;
-
-    cursor: pointer;
-}
-
 .text-white {
     color: #ffffff;
+}
+
+#copyright {
+    padding: 10px;
+    margin: 0;
 }
