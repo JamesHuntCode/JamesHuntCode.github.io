@@ -29,6 +29,7 @@ html, body {
 
 .comp-header {
     font-size: unset !important;
+    text-decoration: none !important;
 }
 
 @media only screen and (min-width : 992px) {
@@ -651,6 +652,140 @@ html, body {
 }
 
 /* end of code for experience section */
+
+/* skill section */
+
+.skill-logo {
+    border-radius: 100%;
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.web-app-dev {
+    background-image: url("../images/php.png");
+}
+
+.desktop-dev {
+    background-image: url("../images/dotnet.png");
+}
+
+.mobile-dev {
+    background-image: url("../images/android_logo.png");
+}
+
+.database-dev {
+    background-image: url("../images/mysql.png");
+}
+
+.ui-dev {
+    background-image: url("../images/html.png");
+}
+
+.devops-dev {
+    background-image: url("../images/jenkins.png");
+}
+
+.skill-header {
+    font-family: "Raleway";
+    margin-top: 5px;
+}
+
+.skill-item {
+    font-family: "Raleway";
+    color: darkgray;
+    margin-top: 5px;
+}
+
+.parent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width : 1200px) {
+    .skill-logo {
+        height: 75px;
+        width: 75px;
+
+        margin: 15px 0;
+    }
+}
+
+@media only screen and (max-width : 1199px) {
+    .skill-logo {
+        height: 60px;
+        width: 60px;
+
+        margin: 10px 0;
+    }
+
+    .skill-header {
+        margin-top: 5px;
+        font-size: 18px;
+    }
+
+    .skill-item {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width : 991px) {
+    .skill-header {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .skill-item {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .skill-logo {
+        margin: 15px 0;
+    }
+
+    .skill-header {
+        margin-top: 5px;
+    }
+
+    .skill-item {
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+    .skill-logo {
+        margin: 15px 0;
+        height: 50px;
+        width: 50px;
+    }
+
+    .skill-header {
+        margin-top: 5px;
+    }
+
+    .skill-item {
+        margin-top: 5px;
+    }
+}
+
+/* end of skill section */
 
 .section-black {
     background-color: #333;

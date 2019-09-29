@@ -22,19 +22,22 @@ $(document).ready(function () {
         switch (linkClicked) {
 
             case "JAMESHUNTCODE":
-            selectedElement = $("#navbar");
+                selectedElement = $("#navbar");
             break;
             case "ABOUT":
-            selectedElement = $("#about-me");
+                selectedElement = $("#about-me");
+            break;
+            case "SKILL SET":
+                selectedElement = $("#skillset");
             break;
             case "EXPERIENCE":
-            selectedElement = $("#experience");
+                selectedElement = $("#experience");
             break;
             case "HOBBIES":
-            selectedElement = $("#hobbies");
+                selectedElement = $("#hobbies");
             break;
             case "CONTACT":
-            selectedElement = $("#contact-me");
+                selectedElement = $("#contact-me");
             break;
 
         }
