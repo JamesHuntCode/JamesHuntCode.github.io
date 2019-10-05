@@ -6,84 +6,12 @@ html, body {
     font-family: "Raleway", arial;
 }
 
-.modal {
- overflow-y: auto;
-}
-
-.modal-open {
- overflow: auto;
- padding-right: 0px !important;
-}
-
 /* code for the welcome section */
 
-#main-image-wrapper {
-    width: auto;
-    position: relative;
-}
-
 #welcome-image {
-    min-height: 300px;
-    max-height: 300px;
-}
-
-.comp-header {
-    font-size: unset !important;
-    text-decoration: none !important;
-}
-
-@media only screen and (min-width : 992px) {
-    #welcome-image {
-        max-height: 100%;
-        max-width: 100%;
-
-        width: auto;
-        height: auto;
-
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-
-        margin: auto;
-
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    .cn {
-        display: table-cell;
-        width: 100%;
-        height: 100%;
-        vertical-align: middle;
-        text-align: center;
-    }
-
-    .inner {
-        display: inline-block;
-        width: 200px; height: 200px;
-    }
-
-}
-
-@media only screen and (max-width : 992px) {
-    #welcome-image {
-        padding-top: 50px;
-        padding-bottom: 50px;
-
-        max-height: 75%;
-        max-width: 80%;
-
-        width: auto;
-        height: auto;
-
-        position: absolute;
-        left: 0;
-        right: 0;
-
-        margin: auto;
-    }
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* end of code for the welcome section */
@@ -445,7 +373,7 @@ html, body {
 
     text-decoration: underline;
 
-    padding-bottom: 10%;
+    padding-bottom: 8%;
 }
 
 .has-text-under {
@@ -651,6 +579,11 @@ html, body {
     }
 }
 
+.comp-header {
+    font-size: unset !important;
+    text-decoration: none !important;
+}
+
 /* end of code for experience section */
 
 /* skill section */
@@ -721,6 +654,10 @@ html, body {
 
         margin: 15px 0;
     }
+
+    .skill-image-container {
+        max-width: 125px !important;
+    }
 }
 
 @media only screen and (max-width : 1199px) {
@@ -729,6 +666,10 @@ html, body {
         width: 60px;
 
         margin: 10px 0;
+    }
+
+    .skill-image-container {
+        max-width: 110px !important;
     }
 
     .skill-header {
@@ -743,6 +684,12 @@ html, body {
 
 }
 
+@media only screen and (min-width : 992px) {
+    #contact-details-container {
+        padding-left: 50px;
+    }
+}
+
 @media only screen and (max-width : 991px) {
     .skill-header {
         margin-top: 5px;
@@ -753,6 +700,8 @@ html, body {
         margin-top: 5px;
         font-size: 12px;
     }
+
+
 }
 
 @media only screen and (max-width : 767px) {
@@ -786,6 +735,71 @@ html, body {
 }
 
 /* end of skill section */
+
+/* contact section */
+
+.formspree-input {
+    font-family: "Raleway", arial;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    width: 100%;
+}
+
+.formspree-button {
+    cursor: pointer;
+}
+
+.contact-photo {
+    -webkit-background-size: cover;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    padding: 0;
+    margin: 0;
+}
+
+.contact-photo {
+    background-image: url("../images/main_image.png");
+}
+
+@media only screen and (min-width : 576px) {
+    .contact-photo-container {
+        max-width: 200px;
+    }
+
+    .contact-photo {
+        height: 150px;
+        width: 150px;
+    }
+
+    #contact-details {
+        padding-top: 40px;
+    }
+}
+
+@media only screen and (max-width : 575px) {
+    .contact-photo-container {
+        max-width: 150px;
+    }
+
+    .contact-photo {
+        height: 100px;
+        width: 100px;
+    }
+
+    #contact-details {
+        padding-top: 50px;
+    }
+}
+
+.contact-download-h6 {
+    color: unset !important;
+}
+
+/* end of contact section */
 
 .section-black {
     background-color: #333;

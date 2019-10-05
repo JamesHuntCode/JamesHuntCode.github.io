@@ -5,10 +5,10 @@ $(document).ready(function () {
 
 
     // Ensure, even when the page size is changed, the container proportions remain consistent.
-    $(window).resize( function () {
+    /*$(window).resize( function () {
         let pageHeight = $(window).height() - 50;
         $("#welcome").css('height', pageHeight + 'px');
-    });
+    });*/
 
 
 
@@ -21,6 +21,9 @@ $(document).ready(function () {
 
         switch (linkClicked) {
 
+            case "CV":
+                window.location = 'jameshuntfullcv.docx';
+                return;
             case "JAMESHUNTCODE":
                 selectedElement = $("#navbar");
             break;
@@ -32,9 +35,6 @@ $(document).ready(function () {
             break;
             case "EXPERIENCE":
                 selectedElement = $("#experience");
-            break;
-            case "HOBBIES":
-                selectedElement = $("#hobbies");
             break;
             case "CONTACT":
                 selectedElement = $("#contact-me");
