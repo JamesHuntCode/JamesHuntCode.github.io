@@ -734,6 +734,21 @@ html, body {
     }
 }
 
+.skill-ul {
+    padding-left: 15px;
+    margin: 0;
+}
+
+.skill-li {
+    margin: 0;
+    padding-left: 0;
+}
+
+.skill-p {
+    margin: 0;
+    padding: 0;
+}
+
 /* end of skill section */
 
 /* contact section */
