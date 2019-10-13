@@ -5,11 +5,11 @@ $(document).ready(function () {
 
 
     // Ensure, even when the page size is changed, the container proportions remain consistent.
-    /*$(window).resize( function () {
+    $(window).resize( function () {
         let pageHeight = $(window).height() - 50;
         $("#welcome").css('height', pageHeight + 'px');
-    });*/
-
+        $("#welcome").css('maxHeight', pageHeight + 'px');
+    });
 
 
     // Scroll to page elements from the navigation bar:
@@ -36,6 +36,9 @@ $(document).ready(function () {
             case "EXPERIENCE":
                 selectedElement = $("#experience");
             break;
+            case "REFERENCES":
+                selectedElement = $("#references");
+                break;
             case "CONTACT":
                 selectedElement = $("#contact-me");
             break;
