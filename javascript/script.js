@@ -22,7 +22,7 @@ $(document).ready(function () {
         switch (linkClicked) {
 
             case "CV":
-                window.location = 'jameshuntfullcv.docx';
+                window.location = 'James%20Hunt%20-%20Software%20Engineer%20CV.docx';
                 return;
             case "JAMESHUNTCODE":
                 selectedElement = $("#navbar");
@@ -36,9 +36,9 @@ $(document).ready(function () {
             case "EXPERIENCE":
                 selectedElement = $("#experience");
             break;
-            case "REFERENCES":
+            /*case "RECOMMENDATIONS":
                 selectedElement = $("#references");
-                break;
+                break;*/
             case "CONTACT":
                 selectedElement = $("#contact-me");
             break;
